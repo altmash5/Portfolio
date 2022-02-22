@@ -36,7 +36,7 @@ if(isset($_POST['name']))
      $sql = "INSERT INTO help_request (name,email,details)
      VALUES ('$name','$email','$details')";
      if (mysqli_query($conn, $sql)) {
-      header("Location:/Portfolio/index.html");
+      header("Location:Portfolio/index.html");
      }
 
      mysqli_close($conn);
